@@ -3,8 +3,7 @@ class Route
 
   def initialize(first_station, last_station)
     @stations = []
-    @stations << first_station
-    @stations << last_station
+    @stations = [first_station, last_station]
   end
 
   def add_station(station)

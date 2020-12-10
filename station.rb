@@ -15,10 +15,6 @@ class Station
   end
 
   def type_trains(type)
-    self.trains.each do |train|
-      if train.type == type
-        puts train
-      end
-    end
+    puts self.trains.select { |train| train.type == type }
   end
 end
